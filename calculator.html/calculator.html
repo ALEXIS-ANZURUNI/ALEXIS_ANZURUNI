@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title" align="center"> ALEXIS`S CALCULATOR</div>
+    <form class="calculator" name="calculator">
+        <table border="4" align="center" cellpadding="20" cellspacing="20" bgcolor="#00FFFF">
+            <tr>
+                <td>
+                    <input type="text" name="input" size="35" id="display"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="button" name="Clear" style="font-size: 20px;" value="C" onClick="calculator.input.value = ''">
+                    <input type="button" name="bracket" style="font-size: 20px;" value="(" onClick="calculator.input.value +='('">
+                    <input type="button" name="bracket" style="font-size: 20px;" value=")" onClick="calculator.input.value +=')'">
+                    <input type="button" name="percentage" style="font-size: 20px;" value="%" onClick="calculator.input.value +='%'">
+                    <input type="button" name="division" style="font-size: 19px;" value="/" onClick="calculator.input.value +='/' ">
+                    <br>
+                    <input type="button" name="one" style="font-size: 30px;" value="1" onClick="calculator.input.value +='1'">
+                    <input type="button" name="two" style="font-size: 30px;" value="2" onClick="calculator.input.value +='2'">
+                    <input type="button" name="three" style="font-size: 30px;" value="3" onClick=" calculator.input.value +='3'">
+                    <input type="button" name="add" class="btntop" style="font-size: 25px;" value="+" onClick="calculator.input.value +='+' ">
+                    <br>
+                    <input type="button" name="four" style="font-size: 30px;" value="4" onClick="calculator.input.value +='4'">
+                    <input type="button" name="five" style="font-size: 30px;" value="5" onClick="calculator.input.value +='5' ">
+                    <input type="button" name="six" style="font-size: 30px;" value="6" onClick="calculator.input.value +='6' ">
+                    <input type="button" name=" minus" style="font-size: 30px;" value="-" onClick="calculator.input.value +='-'">
+                    <br>
+                    <input type="button" name="seven" style="font-size: 30px;" value="7" onClick="calculator.input.value +='7' ">
+                    <input type="button" name="eight" style="font-size: 30px;" value="8" onClick="calculator.input.value +='8' ">
+                    <input type="button" name="nine" style="font-size: 30px;" value="9" onClick="calculator.input.value +='9' ">
+                    <input type="button" name="mult" class="btntop" style="font-size: 30px;" value="*" onClick="calculator.input.value +='*'">
+                    <br>
+                    <input type="button" name="dd/minus" class="button" style="font-size: 30px;" value="+/-" onclick="calculator.input.value +='+/-'">
+                    <input type="button" name="zero" style="font-size: 29px;" value="0" onClick="calculator.input.value +='0'">
+                    <input type="button" name="doIt" style="font-size: 30px;" value="=" onClick="calculator.input.value=eval(calculator.input.value)">
+                    <input type="button" name="dot" style="font-size: 30px;" value="." onClick="calculator.input.value +='.'">
+                
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
